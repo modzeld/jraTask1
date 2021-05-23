@@ -2,7 +2,7 @@
 
 1. Get the copy of this repository.
 2. Remember to install dependencies with npm.
-3. Launch a postgres db server (13.0+).
+3. Launch a postgresql server (13.0+).
 4. Create the '.env' file in the project directory. 
 5. Declare the following variables inside this '.env' file (modify them to match your config):
 ```
