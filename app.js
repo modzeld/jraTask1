@@ -17,6 +17,8 @@ if (!process.env.PWD) process.env.PWD = process.cwd();
 const app = express();
 
 //EXIT ON UNHANDLED ERRORS AND REPORT PROMISE REJECTIONS
+//I hope noone sees this primitive error catcher below, that should be a proper error handler instead. Let's go! :)
+
 process
 .on('unhandledRejection', (reason, p) => {
 	console.error(reason, 'Unhandled rejection at promise ', p);

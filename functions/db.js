@@ -5,6 +5,8 @@ const { Client } = require('pg')
 let obj = new Object();
 
 //DEFINE FUNCTIONS
+// Proper error handling not implemented, so try/catch skipped.
+
 obj.query = async function(text, values = []){
 	let client = new Client();
 	await client.connect();

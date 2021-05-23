@@ -11,6 +11,7 @@ const db = require(appDir + "/functions/db");
 const router = express.Router();
 
 //EXPORTS
+// Proper error handling not implemented, so try/catch skipped.
 module.exports = async function () {
 	await db.test();
 	await db.dropTable('teams');

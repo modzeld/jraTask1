@@ -4,7 +4,7 @@
   "description": "recruitment assignment",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "modzeld",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "express-graphql": "^0.12.0",
     "fast-csv": "^4.3.6",
     "graphql": "^15.5.0",
+    "mocha": "^8.4.0",
     "pg": "^8.6.0"
   }
 }

@@ -5,6 +5,7 @@ const appDir = process.env.PWD;
 const db = require(appDir + "/functions/db");
 
 //EXPORTS
+// Proper error handling not implemented, so try/catch skipped.
 module.exports = {
 	users: async function () {
 		let res = await db.query('SELECT * FROM users ORDER BY id ASC');
