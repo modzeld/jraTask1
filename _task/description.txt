@@ -1,0 +1,23 @@
+Your task is to create an API service allowing CSV data import and data retrieval.
+Use the provided users.csv file as a guide to implement the following APIs:
+1.	Import a CSV file into a database
+a.	use any relational database to store the data
+b.	store the data in two tables - one for users and another for teams
+c.	teams in the database have unique names
+d.	users in the database have unique emails
+e.	handle the CSV upload without saving the file to disk
+2.	Serve data from the database
+•	allow to retrieve a list of teams and its users
+•	allow to retrieve a list of users and their team
+Write any documentation you feel is necessary for us to get up and running with your application.
+Bonus points will be awarded for:
+•	Using a GraphQL server
+•	Using the Stream API
+Your submission will be assessed for:
+•	Understanding of requirements
+•	API design and reliability
+•	Test coverage
+•	Code quality
+•	Git usage
+You should package your application in a publicly accessible GitHub repo that we're able to clone, build and run easily on any computer.
+Please send me a link to the repo as soon as you create it.
