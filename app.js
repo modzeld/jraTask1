@@ -26,15 +26,11 @@ process
 	process.exit(1); //1: err code 1
 });
 
-//INITIALIZE DB AND TEST TABLES
-(async function() {
-	await db.test();
-	await db.dropTable('teams');
-	await db.dropTable('users');
-	await db.createTeamsTable();
-	await db.createUsersTable();
-}()); 
+//INITIALIZE DATABASE
+require('./loaders/db')();
 
+//INITIALIZE GRAPHQL SERVER
+require('./loaders/graphql')(app);
 
 //LOAD ROUTES
 require('./routes')(app);

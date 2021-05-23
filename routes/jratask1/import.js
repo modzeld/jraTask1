@@ -39,7 +39,6 @@ router.post("/", async (req, res) => {
 				else data[2] = data[2].trim();
 				//Insert new user into the users table , do nothing if email already exists 
 				await db.query("INSERT INTO users (firstname, lastname, email, roledesc, team) VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING;", [data[0].trim(), data[1].trim(), data[2], data[3].trim(), data[4].trim()]);
-
 			};
 			init = false;
 		});
