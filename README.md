@@ -17,7 +17,7 @@ PGPASSWORD=yourpassword
 ```
 6. Run the app via "node app.js".
 7. For best compatibility use new node.js version (14.0+).
-8. Navigate to the root route (http://localhost) in your browser.
-9. The given .csv file if provided in the _task folder.
+8. Navigate to the "/" route (http://localhost) in your browser.
+9. The given .csv file is provided in the _task folder.
 
 
